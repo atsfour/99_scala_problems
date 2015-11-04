@@ -1,7 +1,5 @@
 package com.atsfour.s99
 
-import scala.util.Try
-
 trait Solver {
   val problemNum: Int
   val problemDescriptions: List[String]
