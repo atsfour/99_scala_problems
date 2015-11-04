@@ -9,7 +9,7 @@ import scala.reflect.runtime.{universe => ru}
 object Main extends App {
 
   @scala.annotation.tailrec
-  def roop: Unit = {
+  def loop: Unit = {
     val in = scala.io.StdIn.readLine("input problem number (1 to 99), or 'q' to quit: ")
     in match {
       case "q" => println("quit.")
@@ -22,7 +22,7 @@ object Main extends App {
             case Failure(_) => println("not implemented")
           }
         }
-        roop
+        loop
       }
     }
   }
@@ -35,5 +35,5 @@ object Main extends App {
     Try(obj.instance.asInstanceOf[Solver])
   }
 
-  roop
+  loop
 }
