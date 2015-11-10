@@ -18,6 +18,9 @@ object S99List {
   // P-04
   def length = ???
 
+  // P-05
+  def reverse = ???
+
   // P-06
   def isPalindrome = ???
 
@@ -54,7 +57,7 @@ object S99List {
   }
 
   // P-10
-  def encode = ???
+  def encode[A](l: List[A]): List[(Int, A)] = ???
 
   // P-11
   def encodeModified = ???
